@@ -214,6 +214,5 @@ allowedMentions: {
   repliedUser: true
 }
 
-
-
-client.login('OTY5NjM0MDMyMDM4MDUxODgw.YmwQEA.i7eizfX5FGMYzFgIcUNe559nJv0');
+require('dotenv').config({ path: './.env' });
+client.login(process.env.TOKEN);
